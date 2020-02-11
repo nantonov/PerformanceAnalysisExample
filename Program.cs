@@ -6,7 +6,9 @@ namespace PerformanceAnalysisExample
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Service service = new Service();
+            var names = service.GetNames();
+            Console.WriteLine(names);
         }
     }
 }
