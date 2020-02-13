@@ -1,4 +1,4 @@
-﻿using BenchmarkDotNet.Running;
+﻿using System;
 
 namespace PerformanceAnalysisExample
 {
@@ -6,7 +6,8 @@ namespace PerformanceAnalysisExample
     {
         static void Main(string[] args)
         {
-            BenchmarkRunner.Run<Service>();
+            Service service = new Service();
+            Console.WriteLine(service.GetNamesFaster());
         }
     }
 }
