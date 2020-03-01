@@ -338,3 +338,4 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
+/PerfViewPerformanceAnalysisExample/PerfViewData.etl.zip

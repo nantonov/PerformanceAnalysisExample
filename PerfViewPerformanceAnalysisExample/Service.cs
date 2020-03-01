@@ -1,8 +1,7 @@
-﻿using System.Collections.Generic;
-using System.IO;
-using System.Text;
-using Newtonsoft.Json;
+﻿using PerfViewPerformanceAnalysisExample.Helpers;
 using PerfViewPerformanceAnalysisExample.Models;
+using System.Collections.Generic;
+using System.Text;
 
 namespace PerfViewPerformanceAnalysisExample
 {
@@ -12,8 +11,7 @@ namespace PerfViewPerformanceAnalysisExample
 
         public Service()
         {
-            var data = File.ReadAllText(@"data.json");
-            _entities = JsonConvert.DeserializeObject<List<Entity>>(data);
+            _entities = DataFileGenerator.GenerateData();
         }
 
         public string GetNames()
