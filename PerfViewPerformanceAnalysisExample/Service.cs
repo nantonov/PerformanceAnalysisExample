@@ -2,9 +2,9 @@
 using System.IO;
 using System.Text;
 using Newtonsoft.Json;
-using PerformanceAnalysisExample.Models;
+using PerfViewPerformanceAnalysisExample.Models;
 
-namespace PerformanceAnalysisExample
+namespace PerfViewPerformanceAnalysisExample
 {
     public class Service
     {

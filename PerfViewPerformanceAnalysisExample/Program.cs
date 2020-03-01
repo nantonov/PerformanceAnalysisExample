@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PerformanceAnalysisExample
+namespace PerfViewPerformanceAnalysisExample
 {
     class Program
     {

@@ -1,4 +1,4 @@
-﻿namespace PerformanceAnalysisExample.Models
+﻿namespace PerfViewPerformanceAnalysisExample.Models
 {
     public class Entity
     {
