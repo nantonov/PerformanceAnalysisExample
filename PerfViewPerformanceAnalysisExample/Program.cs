@@ -7,7 +7,7 @@ namespace PerfViewPerformanceAnalysisExample
         static void Main(string[] args)
         {
             var service = new Service();
-            var names = service.GetNamesFaster();
+            var names = service.GetNames();
             Console.WriteLine(names);
         }
     }

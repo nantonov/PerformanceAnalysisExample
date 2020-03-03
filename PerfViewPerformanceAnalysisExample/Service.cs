@@ -1,13 +1,12 @@
-﻿using PerfViewPerformanceAnalysisExample.Helpers;
+﻿using System.Text;
+using PerfViewPerformanceAnalysisExample.Helpers;
 using PerfViewPerformanceAnalysisExample.Models;
-using System.Collections.Generic;
-using System.Text;
 
 namespace PerfViewPerformanceAnalysisExample
 {
     public class Service
     {
-        private readonly IEnumerable<Entity> _entities;
+        private readonly Entity[] _entities;
 
         public Service()
         {

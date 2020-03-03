@@ -6,7 +6,8 @@ namespace PerfViewPerformanceAnalysisExample.Helpers
 {
     public static class DataFileGenerator
     {
-        public const int EntitiesCount = 100000;
+        private const int EntitiesCount = 1000000;
+        private static readonly Random Random = new Random();
 
         public static Entity[] GenerateData()
         {
@@ -25,13 +26,12 @@ namespace PerfViewPerformanceAnalysisExample.Helpers
 
         private static string GenerateRandomString()
         {
-            var random = new Random();
-            var length = random.Next(1, 10);
-            var stringBuilder = new StringBuilder();
+            var length = Random.Next(1, 10);
+            var stringBuilder = new StringBuilder(length);
 
             for (var i = 0; i < length; i++)
             {
-                var flt = random.NextDouble();
+                var flt = Random.NextDouble();
                 var shift = Convert.ToInt32(Math.Floor(25 * flt));
                 var letter = Convert.ToChar(shift + 65);
                 stringBuilder.Append(letter);
