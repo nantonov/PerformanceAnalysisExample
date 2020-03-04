@@ -10,7 +10,7 @@ namespace PerfViewPerformanceAnalysisExample
 
         public Service()
         {
-            _entities = DataFileGenerator.GenerateData();
+            _entities = DataGenerator.GenerateData();
         }
 
         public string GetNames()

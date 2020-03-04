@@ -4,7 +4,7 @@ using System.Text;
 
 namespace PerfViewPerformanceAnalysisExample.Helpers
 {
-    public static class DataFileGenerator
+    public static class DataGenerator
     {
         private const int EntitiesCount = 1000000;
         private static readonly Random Random = new Random();
